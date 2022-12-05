@@ -6,12 +6,66 @@
 
 body{
     background-color: rgb(54, 54, 156);
+    font-family: 'Montserrat';
+}
+
+.container{
+    background-color: rgb(6, 38, 73);
+    
+   }
+
+.pageTitle{
+    /*background-color: bisque;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#ddd;
+}
+
+.pageTitle h1{
+    font-weight: 700;
+    font-size: 48px;
+    padding: 1rem;
+}
+/*.navbar{
+    background-color: blueviolet;
+}*/
+
+.navbar ul{
+    list-style-type:none ;
+    display: flex;
+}
+
+.navbar ul li{
+    margin:1rem;
+}
+
+.eightBallContainer{
+    background-color: cadetblue;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 }
 
 .theEightBall{
-    background-color: #000;
-    border: 1px solid #fff;
+    background-color: black;
+    margin:1rem;
+    
     border-radius: 50%;
-    margin:5rem 10rem;
-    padding:35rem;
+}
+
+.eightBallScreen{
+    background-color: #fff;
+    margin: 10rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.theFoot{
+    background-color: brown;
+    margin:1rem 0rem 0rem 0rem;
+    padding:2rem;
 }

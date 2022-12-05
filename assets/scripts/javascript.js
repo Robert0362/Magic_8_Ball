@@ -1,7 +1,7 @@
 'use strict'
 const userName= '';
 const userQuestion = '';
-const eightBall = '';
+let eightBall = '';
 
 let randomNumber = Math.floor(Math.random()* 8);
 
