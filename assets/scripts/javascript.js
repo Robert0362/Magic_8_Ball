@@ -3,6 +3,7 @@ const userName= '';
 const userQuestion = '';
 const outcomeBtn = document.getElementById('outcomeBtn');
 const outcome = document.getElementById('outcome');
+const eightBallScreen = document.getElementById('eightBallScreen')
 let eightBall = '';
 
 
@@ -39,12 +40,16 @@ outcomeBtn.addEventListener('click', function(){
             break;
     }
     outcome.innerText=eightBall;
-    outcome.style.fontSize = 'medium';
+    outcome.style.fontSize = '18px';
+    eightBallScreen.style.backgroundColor = '#1c1f8a';
+    eightBallScreen.style.color = 'white';
     console.log(eightBall);
-    setTimeout('clear()', 10000 );
+    setTimeout('clear()', 8000 );
 });
 
 function clear(){
     outcome.innerText = '8';
-    outcome.style.fontSize = 'xx-large';
+    outcome.style.fontSize = '60px';
+    eightBallScreen.style.backgroundColor = '#fff';
+    eightBallScreen.style.color = 'initial';
 }
