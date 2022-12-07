@@ -39,5 +39,12 @@ outcomeBtn.addEventListener('click', function(){
             break;
     }
     outcome.innerText=eightBall;
+    outcome.style.fontSize = 'medium';
     console.log(eightBall);
+    setTimeout('clear()', 10000 );
 });
+
+function clear(){
+    outcome.innerText = '8';
+    outcome.style.fontSize = 'xx-large';
+}
